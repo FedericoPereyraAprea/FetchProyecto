@@ -1,3 +1,16 @@
+//fetch api dolar
+let dolarBlue = document.getElementById("dolarBlue")
+fetch("https://criptoya.com/api/dolar")
+.then(response => response.json())
+.then(datos => {
+	let datosDolar = {...datos}	
+	let {blue} = datosDolar
+	dolarBlue.innerHTML = `
+		<p>Dolar a tiempo real que usamos para cotizar: ${blue}</p>
+		`
+})
+
+
 //Productos y carrito
 let carrito = JSON.parse(localStorage.getItem("carrito")) ?? []
 fetch("./productos.json")

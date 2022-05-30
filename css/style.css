@@ -181,6 +181,12 @@ body {
 
 /* Fin Fondos */
 /* Inicio index */
+.containerProductos #dolarBlue {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  background-color: green;
+}
 .containerProductos .contenedorDeImagenes .subContenedorImgs .carritoBoton {
   position: relative;
   top: 174px;
